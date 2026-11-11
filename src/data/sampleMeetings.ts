@@ -1,0 +1,213 @@
+import { MeetingMetadata, TranscriptSegment } from '../types/index.ts';
+
+export interface SampleMeeting {
+  id: string;
+  metadata: MeetingMetadata;
+  segments: TranscriptSegment[];
+}
+
+export const SAMPLE_MEETINGS: SampleMeeting[] = [
+  {
+    id: 'footprints-curriculum',
+    metadata: {
+      id: 'footprints-curriculum',
+      title: 'Footprints Academic Curriculum & Bilingual Reporting Sync',
+      meetCode: 'fps-cur-2026',
+      meetUrl: 'https://meet.google.com/fps-cur-2026',
+      date: '2026-11-10',
+      time: '09:00 AM - 10:00 AM (ICT)',
+      duration: '45 mins',
+      participants: [
+        'Chomroaen Soknara (Chair)',
+        'Sreypov Lim (Khmer Lead)',
+        'David Miller (Cambridge ESL)',
+        'Bopha Kem (Parent Coordinator)',
+      ],
+      department: 'Academic Leadership',
+      organizer: 'senchomroaen.soknara@footprintsschool.edu.kh',
+    },
+    segments: [
+      {
+        id: 's1',
+        speaker: 'Chomroaen Soknara',
+        timestamp: '09:01 AM',
+        text: 'Good morning everyone. Welcome to our curriculum alignment and bilingual assessment review for Q4.',
+        language: 'en',
+      },
+      {
+        id: 's2',
+        speaker: 'Sreypov Lim',
+        timestamp: '09:03 AM',
+        text: 'ជម្រាបសួរលោកនាយក និងសហការីទាំងអស់។ សម្រាប់កម្មវិធីសិក្សាភាសាខ្មែរ ថ្នាក់ទី៥ និងទី៦ យើងបានរៀបចំមេរៀនស្របតាមស្តង់ដារក្រសួងអប់រំរួចរាល់ហើយ។',
+        language: 'km',
+      },
+      {
+        id: 's3',
+        speaker: 'David Miller',
+        timestamp: '09:06 AM',
+        text: 'Thanks Teacher Sreypov. On the Cambridge ESL side, we need to ensure student reading rubrics align with the Khmer comprehension tests before next Friday.',
+        language: 'en',
+      },
+      {
+        id: 's4',
+        speaker: 'Sreypov Lim',
+        timestamp: '09:08 AM',
+        text: 'ខ្ញុំយល់ស្រប។ ខ្ញុំទទួលខុសត្រូវរៀបចំតារាងប្រៀបធៀប Rubrics ទាំងពីរភាសា ផ្ញើជូនលោក David នៅថ្ងៃពុធនេះ។',
+        language: 'km',
+      },
+      {
+        id: 's5',
+        speaker: 'Bopha Kem',
+        timestamp: '09:12 AM',
+        text: 'Parents have asked if the upcoming Term 2 report cards can be bilingual (ទាំងភាសាខ្មែរ និងអង់គ្លេស). Some grandparents only read Khmer script.',
+        language: 'mixed',
+      },
+      {
+        id: 's6',
+        speaker: 'Chomroaen Soknara',
+        timestamp: '09:15 AM',
+        text: 'We agreed that all final student report cards must be fully bilingual. The IT team will update the template by November 20th.',
+        language: 'en',
+      },
+      {
+        id: 's7',
+        speaker: 'Sreypov Lim',
+        timestamp: '09:18 AM',
+        text: 'គណៈកម្មការបានឯកភាពគ្នា ហើយលោកគ្រូអ្នកគ្រូខ្មែរនឹងជួយបកប្រែ Feedback សិស្សឱ្យបានត្រឹមត្រូវមុនថ្ងៃប្រគល់កាតសិស្ស។',
+        language: 'km',
+      },
+      {
+        id: 's8',
+        speaker: 'Chomroaen Soknara',
+        timestamp: '09:22 AM',
+        text: 'Action item for Teacher Bopha: please schedule the Parent-Teacher Conference date for December 5th and notify families via Telegram and email.',
+        language: 'en',
+      },
+      {
+        id: 's9',
+        speaker: 'Bopha Kem',
+        timestamp: '09:24 AM',
+        text: 'ចាសលោកនាយក ខ្ញុំនឹងរៀបចំសេចក្តីជូនដំណឹងជាពីភាសា ផ្ញើជូនអាណាព្យាបាលនៅដើមសប្តាហ៍ក្រោយ។',
+        language: 'km',
+      },
+      {
+        id: 's10',
+        speaker: 'David Miller',
+        timestamp: '09:28 AM',
+        text: 'Great. Let us finalize the syllabus printouts today so teachers have materials ready for Monday.',
+        language: 'en',
+      },
+    ],
+  },
+  {
+    id: 'phnompenh-tech',
+    metadata: {
+      id: 'phnompenh-tech',
+      title: 'Phnom Penh Tech Sprint - Bakong KHQR & API Latency',
+      meetCode: 'kh-tech-882',
+      meetUrl: 'https://meet.google.com/kh-tech-882',
+      date: '2026-11-09',
+      time: '02:00 PM - 02:45 PM (ICT)',
+      duration: '40 mins',
+      participants: ['Sovan Rath (Lead)', 'Chantha Keo (Backend)', 'Emily Chen (PM)'],
+      department: 'Engineering',
+      organizer: 'sovan@khmertech.asia',
+    },
+    segments: [
+      {
+        id: 't1',
+        speaker: 'Sovan Rath',
+        timestamp: '02:00 PM',
+        text: 'សួស្តីក្រុមការងារ! ថ្ងៃនេះយើង sync រឿង Bakong KHQR API integration និង latency issues លើ Production។',
+        language: 'km',
+      },
+      {
+        id: 't2',
+        speaker: 'Emily Chen',
+        timestamp: '02:03 PM',
+        text: 'Yes, checkout drop-off rate increased by 4% because webhook confirmations took longer than 3 seconds.',
+        language: 'en',
+      },
+      {
+        id: 't3',
+        speaker: 'Chantha Keo',
+        timestamp: '02:06 PM',
+        text: 'មូលហេតុមកពី database connection pool នៅ AWS Singapore ឆ្ងាយបន្តិច។ យើងត្រូវតែ switch ទៅប្រើ Redis cache សម្រាប់ session verification។',
+        language: 'mixed',
+      },
+      {
+        id: 't4',
+        speaker: 'Sovan Rath',
+        timestamp: '02:10 PM',
+        text: 'We decided to deploy the Redis caching layer to staging by tomorrow 5 PM. Chantha will handle deployment.',
+        language: 'en',
+      },
+      {
+        id: 't5',
+        speaker: 'Emily Chen',
+        timestamp: '02:15 PM',
+        text: 'Approved. Please make sure load testing covers 1,000 concurrent QR scans before we release.',
+        language: 'en',
+      },
+      {
+        id: 't6',
+        speaker: 'Chantha Keo',
+        timestamp: '02:18 PM',
+        text: 'ខ្ញុំយល់ព្រម ហើយនឹងផ្ញើរបាយការណ៍ load test ជូន Emily មុនថ្ងៃសុក្រនេះ។',
+        language: 'km',
+      },
+    ],
+  },
+  {
+    id: 'ngo-health',
+    metadata: {
+      id: 'ngo-health',
+      title: 'Community Health Program - Provincial Mobile Clinics',
+      meetCode: 'ngo-cln-401',
+      meetUrl: 'https://meet.google.com/ngo-cln-401',
+      date: '2026-11-08',
+      time: '11:00 AM - 11:45 AM (ICT)',
+      duration: '45 mins',
+      participants: ['Dr. Sarun Kong (Director)', 'Mary Peterson (Donor)', 'Neary Vong (Field)'],
+      department: 'Public Health Operations',
+      organizer: 'dr.sarun@cambodiahealth.org',
+    },
+    segments: [
+      {
+        id: 'n1',
+        speaker: 'Dr. Sarun Kong',
+        timestamp: '11:00 AM',
+        text: 'សូមស្វាគមន៍អ្នកស្រី Mary និងកញ្ញា Neary។ គម្រោងគ្លីនិកចល័តនៅខេត្តកំពង់ចាម និងសៀមរាប ទទួលបានការគាំទ្រយ៉ាងខ្លាំងពីប្រជាពលរដ្ឋ។',
+        language: 'km',
+      },
+      {
+        id: 'n2',
+        speaker: 'Mary Peterson',
+        timestamp: '11:04 AM',
+        text: 'The donor board is very impressed by the reach of 2,400 prenatal checkups last month.',
+        language: 'en',
+      },
+      {
+        id: 'n3',
+        speaker: 'Neary Vong',
+        timestamp: '11:08 AM',
+        text: 'ទោះយ៉ាងណា យើងត្រូវតែបន្ថែមបុគ្គលិកសុខាភិបាល ២ រូបទៀតនៅមណ្ឌលសុខភាពស្រុក ដើម្បីកុំឱ្យមានការកកស្ទះ។',
+        language: 'km',
+      },
+      {
+        id: 'n4',
+        speaker: 'Mary Peterson',
+        timestamp: '11:12 AM',
+        text: 'We agreed to release an additional $15,000 contingency grant to recruit two local nurses.',
+        language: 'en',
+      },
+      {
+        id: 'n5',
+        speaker: 'Dr. Sarun Kong',
+        timestamp: '11:15 AM',
+        text: 'អរគុណច្រើន Mary។ ខ្ញុំនឹងចាត់ចែងការចុះហត្ថលេខាលើកិច្ចសន្យាការងារឱ្យបានមុនដំណាច់ខែនេះ។',
+        language: 'km',
+      },
+    ],
+  },
+];

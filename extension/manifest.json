@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "SamrapMeet - English & Khmer Google Meet Note Summarizer",
+  "version": "1.0.0",
+  "author": "Footprints IT-Team (Footprints International School)",
+  "description": "AI-powered note taker & summarizer for Google Meet with specialized English & Khmer bilingual transcription. Created by Footprints IT-Team.",
+  "permissions": ["storage", "sidePanel", "activeTab"],
+  "host_permissions": ["https://meet.google.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

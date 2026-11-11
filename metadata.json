@@ -1,0 +1,8 @@
+{
+  "name": "SamrapMeet - English & Khmer Google Meet Note Summarizer",
+  "description": "AI meeting note summarizer extension for Google Meet, specialized for English and Khmer bilingual transcriptions, live captions capture, and modular multi-AI provider architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

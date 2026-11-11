@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 280px;
+      padding: 14px;
+      background: #0f172a;
+      color: #f8fafc;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    .logo {
+      font-size: 18px;
+    }
+    h1 {
+      font-size: 14px;
+      font-weight: 700;
+      margin: 0;
+      color: #38bdf8;
+    }
+    .subtitle {
+      font-size: 10px;
+      color: #94a3b8;
+      margin-bottom: 12px;
+    }
+    .box {
+      background: #1e293b;
+      border: 1px solid #334155;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 11px;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    .badge {
+      display: inline-block;
+      background: #065f46;
+      color: #6ee7b7;
+      font-size: 9px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    button {
+      width: 100%;
+      padding: 8px 12px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <span class="logo">🇰🇭</span>
+    <div>
+      <h1>SamrapMeet</h1>
+    </div>
+  </div>
+  <div class="subtitle">English & Khmer &bull; Footprints IT-Team</div>
+
+  <div class="box">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+      <span>Status:</span>
+      <span class="badge">READY</span>
+    </div>
+    <div style="color: #cbd5e1;">
+      Join any Google Meet call (<strong>meet.google.com</strong>) and click <strong>CC</strong> to automatically capture speech in English and Khmer.
+    </div>
+  </div>
+
+  <button id="open-btn">Open Notes Sidepanel</button>
+  <script src="popup.js"></script>
+</body>
+</html>
